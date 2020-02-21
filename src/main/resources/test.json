@@ -1,0 +1,832 @@
+{
+  "total":2570,
+  "p":1,
+  "ps":3,
+  "paging":{
+    "pageIndex":1,
+    "pageSize":3,
+    "total":2570
+  },
+  "issues":[
+    {
+      "key":"AXBhy9ISFlY0BJMJCzLZ",
+      "rule":"squid:S1151",
+      "severity":"MAJOR",
+      "component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/adapter/gsa/KFGSARepository.java",
+      "componentId":1703355,
+      "project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+      "subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+      "line":98,
+      "textRange":{
+        "startLine":98,
+        "endLine":98,
+        "startOffset":12,
+        "endOffset":19
+      },
+      "flows":[
+
+      ],
+      "status":"OPEN",
+      "message":"Reduce this switch case number of lines from 77 to at most 5, for example by extracting code into methods.",
+      "debt":"5min",
+      "author":"russell.garratt@kingfisher.com",
+      "tags":[
+        "brain-overload"
+      ],
+      "transitions":[
+
+      ],
+      "actions":[
+
+      ],
+      "comments":[
+
+      ],
+      "creationDate":"2020-02-20T08:25:50+0000",
+      "updateDate":"2020-02-20T08:25:50+0000"
+    },
+    {
+      "key":"AXBhy9IRFlY0BJMJCzLW",
+      "rule":"squid:S1067",
+      "severity":"MAJOR",
+      "component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/adapter/gsa/KFGSARepository.java",
+      "componentId":1703355,
+      "project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+      "subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+      "line":100,
+      "textRange":{
+        "startLine":100,
+        "endLine":101,
+        "startOffset":19,
+        "endOffset":91
+      },
+      "flows":[
+
+      ],
+      "status":"OPEN",
+      "message":"Reduce the number of conditional operators (4) used in the expression (maximum allowed 3).",
+      "debt":"6min",
+      "author":"russell.garratt@kingfisher.com",
+      "tags":[
+        "brain-overload"
+      ],
+      "transitions":[
+
+      ],
+      "actions":[
+
+      ],
+      "comments":[
+
+      ],
+      "creationDate":"2020-02-20T08:25:50+0000",
+      "updateDate":"2020-02-20T08:25:50+0000"
+    },
+    {
+      "key":"AXBhy9IRFlY0BJMJCzLX",
+      "rule":"squid:S1141",
+      "severity":"MAJOR",
+      "component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/adapter/gsa/KFGSARepository.java",
+      "componentId":1703355,
+      "project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+      "subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+      "line":157,
+      "textRange":{
+        "startLine":157,
+        "endLine":157,
+        "startOffset":24,
+        "endOffset":27
+      },
+      "flows":[
+        {
+          "locations":[
+            {
+              "textRange":{
+                "startLine":134,
+                "endLine":134,
+                "startOffset":16,
+                "endOffset":19
+              },
+              "msg":"Nesting + 1"
+            }
+          ]
+        }
+      ],
+      "status":"OPEN",
+      "message":"Extract this nested try block into a separate method.",
+      "debt":"20min",
+      "author":"russell.garratt@kingfisher.com",
+      "tags":[
+        "confusing"
+      ],
+      "transitions":[
+
+      ],
+      "actions":[
+
+      ],
+      "comments":[
+
+      ],
+      "creationDate":"2020-02-20T08:25:50+0000",
+      "updateDate":"2020-02-20T08:25:50+0000"
+    }
+  ],
+  "components":[
+    {
+      "id":1703352,
+      "key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+      "uuid":"AXBhy1jhFlY0BJMJCx9_",
+      "enabled":true,
+      "qualifier":"BRC",
+      "name":"base dev_fft_java_6",
+      "longName":"base dev_fft_java_6",
+      "path":"KF/Common/Base",
+      "projectId":1700197,
+      "subProjectId":1700197
+    },
+    {
+      "id":1700197,
+      "key":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+      "uuid":"AXBhyzyyFlY0BJMJCwdL",
+      "enabled":true,
+      "qualifier":"TRK",
+      "name":"KITS-ATGaucafr05 dev_fft_java_6",
+      "longName":"KITS-ATGaucafr05 dev_fft_java_6"
+    },
+    {
+      "id":1703355,
+      "key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/adapter/gsa/KFGSARepository.java",
+      "uuid":"AXBhy1h6FlY0BJMJCxOj",
+      "enabled":true,
+      "qualifier":"FIL",
+      "name":"KFGSARepository.java",
+      "longName":"src/main/java/atg/adapter/gsa/KFGSARepository.java",
+      "path":"src/main/java/atg/adapter/gsa/KFGSARepository.java",
+      "projectId":1700197,
+      "subProjectId":1703352
+    }
+  ],
+  "rules":[
+    {
+      "key":"squid:S1067",
+      "name":"Expressions should not be too complex",
+      "lang":"java",
+      "status":"READY",
+      "langName":"Java"
+    },
+    {
+      "key":"squid:S1141",
+      "name":"Try-catch blocks should not be nested",
+      "lang":"java",
+      "status":"READY",
+      "langName":"Java"
+    },
+    {
+      "key":"squid:S1151",
+      "name":"\"switch case\" clauses should not have too many lines",
+      "lang":"java",
+      "status":"READY",
+      "langName":"Java"
+    }
+  ],
+  "users":[
+
+  ],
+  "actionPlans":[
+
+  ],
+  "languages":[
+    {
+      "key":"js",
+      "name":"JavaScript"
+    },
+    {
+      "key":"java",
+      "name":"Java"
+    },
+    {
+      "key":"cs",
+      "name":"C#"
+    }
+  ],
+  "facets":[
+    {
+      "property":"severities",
+      "values":[
+        {
+          "val":"MAJOR",
+          "count":2570
+        },
+        {
+          "val":"MINOR",
+          "count":953
+        },
+        {
+          "val":"INFO",
+          "count":341
+        },
+        {
+          "val":"CRITICAL",
+          "count":136
+        },
+        {
+          "val":"BLOCKER",
+          "count":0
+        }
+      ]
+    },
+    {
+      "property":"resolutions",
+      "values":[
+        {
+          "val":"",
+          "count":2570
+        },
+        {
+          "val":"FALSE-POSITIVE",
+          "count":0
+        },
+        {
+          "val":"WONTFIX",
+          "count":0
+        },
+        {
+          "val":"FIXED",
+          "count":0
+        },
+        {
+          "val":"REMOVED",
+          "count":0
+        }
+      ]
+    }
+  ]
+};{
+"total":2570,
+"p":2,
+"ps":3,
+"paging":{
+"pageIndex":2,
+"pageSize":3,
+"total":2570
+},
+"issues":[
+{
+"key":"AXBhy9IwFlY0BJMJCzLc",
+"rule":"squid:S1066",
+"severity":"MAJOR",
+"component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/admin/servlet/AccessLoggingServlet.java",
+"componentId":1703362,
+"project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+"line":74,
+"textRange":{
+"startLine":74,
+"endLine":74,
+"startOffset":20,
+"endOffset":22
+},
+"flows":[
+{
+"locations":[
+{
+"textRange":{
+"startLine":73,
+"endLine":73,
+"startOffset":16,
+"endOffset":18
+},
+"msg":""
+}
+]
+}
+],
+"status":"OPEN",
+"message":"Merge this if statement with the enclosing one.",
+"debt":"5min",
+"author":"malcolm.henry@kingfisher.com",
+"tags":[
+"clumsy"
+],
+"transitions":[
+
+],
+"actions":[
+
+],
+"comments":[
+
+],
+"creationDate":"2020-02-20T08:25:50+0000",
+"updateDate":"2020-02-20T08:25:50+0000"
+},
+{
+"key":"AXBhy9IwFlY0BJMJCzLd",
+"rule":"squid:S1132",
+"severity":"MAJOR",
+"component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/admin/servlet/AccessLoggingServlet.java",
+"componentId":1703362,
+"project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+"line":83,
+"textRange":{
+"startLine":83,
+"endLine":83,
+"startOffset":58,
+"endOffset":64
+},
+"flows":[
+
+],
+"status":"OPEN",
+"message":"Move the \"POST\" string literal on the left side of this string comparison.",
+"debt":"10min",
+"author":"malcolm.henry@kingfisher.com",
+"tags":[
+"bad-practice"
+],
+"transitions":[
+
+],
+"actions":[
+
+],
+"comments":[
+
+],
+"creationDate":"2020-02-20T08:25:50+0000",
+"updateDate":"2020-02-20T08:25:50+0000"
+},
+{
+"key":"AXBhy9JBFlY0BJMJCzLf",
+"rule":"squid:S2160",
+"severity":"MAJOR",
+"component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/commerce/order/KFChildCommerceItemImpl.java",
+"componentId":1703366,
+"project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+"line":5,
+"textRange":{
+"startLine":5,
+"endLine":5,
+"startOffset":13,
+"endOffset":36
+},
+"flows":[
+
+],
+"status":"OPEN",
+"message":"Override this superclass' \"equals\" method.",
+"debt":"30min",
+"author":"sayantan.d2@tcs.com",
+"tags":[
+"suspicious"
+],
+"transitions":[
+
+],
+"actions":[
+
+],
+"comments":[
+
+],
+"creationDate":"2020-02-20T08:25:50+0000",
+"updateDate":"2020-02-20T08:25:50+0000"
+}
+],
+"components":[
+{
+"id":1703352,
+"key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+"uuid":"AXBhy1jhFlY0BJMJCx9_",
+"enabled":true,
+"qualifier":"BRC",
+"name":"base dev_fft_java_6",
+"longName":"base dev_fft_java_6",
+"path":"KF/Common/Base",
+"projectId":1700197,
+"subProjectId":1700197
+},
+{
+"id":1703366,
+"key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/commerce/order/KFChildCommerceItemImpl.java",
+"uuid":"AXBhy1h6FlY0BJMJCxOu",
+"enabled":true,
+"qualifier":"FIL",
+"name":"KFChildCommerceItemImpl.java",
+"longName":"src/main/java/atg/commerce/order/KFChildCommerceItemImpl.java",
+"path":"src/main/java/atg/commerce/order/KFChildCommerceItemImpl.java",
+"projectId":1700197,
+"subProjectId":1703352
+},
+{
+"id":1700197,
+"key":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"uuid":"AXBhyzyyFlY0BJMJCwdL",
+"enabled":true,
+"qualifier":"TRK",
+"name":"KITS-ATGaucafr05 dev_fft_java_6",
+"longName":"KITS-ATGaucafr05 dev_fft_java_6"
+},
+{
+"id":1703362,
+"key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/admin/servlet/AccessLoggingServlet.java",
+"uuid":"AXBhy1h6FlY0BJMJCxOq",
+"enabled":true,
+"qualifier":"FIL",
+"name":"AccessLoggingServlet.java",
+"longName":"src/main/java/atg/admin/servlet/AccessLoggingServlet.java",
+"path":"src/main/java/atg/admin/servlet/AccessLoggingServlet.java",
+"projectId":1700197,
+"subProjectId":1703352
+}
+],
+"rules":[
+{
+"key":"squid:S1066",
+"name":"Collapsible \"if\" statements should be merged",
+"lang":"java",
+"status":"READY",
+"langName":"Java"
+},
+{
+"key":"squid:S1132",
+"name":"Strings literals should be placed on the left side when checking for equality",
+"lang":"java",
+"status":"READY",
+"langName":"Java"
+},
+{
+"key":"squid:S2160",
+"name":"Subclasses that add fields should override \"equals\"",
+"lang":"java",
+"status":"READY",
+"langName":"Java"
+}
+],
+"users":[
+
+],
+"actionPlans":[
+
+],
+"languages":[
+{
+"key":"js",
+"name":"JavaScript"
+},
+{
+"key":"java",
+"name":"Java"
+},
+{
+"key":"cs",
+"name":"C#"
+}
+],
+"facets":[
+{
+"property":"severities",
+"values":[
+{
+"val":"MAJOR",
+"count":2570
+},
+{
+"val":"MINOR",
+"count":953
+},
+{
+"val":"INFO",
+"count":341
+},
+{
+"val":"CRITICAL",
+"count":136
+},
+{
+"val":"BLOCKER",
+"count":0
+}
+]
+},
+{
+"property":"resolutions",
+"values":[
+{
+"val":"",
+"count":2570
+},
+{
+"val":"FALSE-POSITIVE",
+"count":0
+},
+{
+"val":"WONTFIX",
+"count":0
+},
+{
+"val":"FIXED",
+"count":0
+},
+{
+"val":"REMOVED",
+"count":0
+}
+]
+}
+]
+};{
+"total":2570,
+"p":3,
+"ps":3,
+"paging":{
+"pageIndex":3,
+"pageSize":3,
+"total":2570
+},
+"issues":[
+{
+"key":"AXBhy9JHFlY0BJMJCzLg",
+"rule":"squid:S2160",
+"severity":"MAJOR",
+"component":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/commerce/order/KFParentCommerceItemImpl.java",
+"componentId":1703367,
+"project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"subProject":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+"line":13,
+"textRange":{
+"startLine":13,
+"endLine":13,
+"startOffset":13,
+"endOffset":37
+},
+"flows":[
+
+],
+"status":"OPEN",
+"message":"Override this superclass' \"equals\" method.",
+"debt":"30min",
+"author":"sayantan.d2@tcs.com",
+"tags":[
+"suspicious"
+],
+"transitions":[
+
+],
+"actions":[
+
+],
+"comments":[
+
+],
+"creationDate":"2020-02-20T08:25:50+0000",
+"updateDate":"2020-02-20T08:25:50+0000"
+},
+{
+"key":"AXBhzC5gFlY0BJMJCzsY",
+"rule":"squid:S1168",
+"severity":"MAJOR",
+"component":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6:src/main/java/atg/endeca/index/admin/IndexingConfigurationDroplet.java",
+"componentId":1709244,
+"project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"subProject":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6",
+"line":48,
+"textRange":{
+"startLine":48,
+"endLine":48,
+"startOffset":10,
+"endOffset":14
+},
+"flows":[
+
+],
+"status":"OPEN",
+"message":"Return an empty collection instead of null.",
+"debt":"30min",
+"author":"malcolm.henry@kingfisher.com",
+"tags":[
+"cert"
+],
+"transitions":[
+
+],
+"actions":[
+
+],
+"comments":[
+
+],
+"creationDate":"2020-02-20T08:25:50+0000",
+"updateDate":"2020-02-20T08:25:50+0000"
+},
+{
+"key":"AXBhzC5mFlY0BJMJCzsa",
+"rule":"squid:S1854",
+"severity":"MAJOR",
+"component":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6:src/main/java/atg/endeca/index/admin/IndexingHistoryDroplet.java",
+"componentId":1709245,
+"project":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"subProject":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6",
+"line":75,
+"textRange":{
+"startLine":75,
+"endLine":75,
+"startOffset":17,
+"endOffset":23
+},
+"flows":[
+
+],
+"status":"OPEN",
+"message":"Remove this useless assignment to local variable \"service\".",
+"debt":"15min",
+"author":"malcolm.henry@kingfisher.com",
+"tags":[
+"cert",
+"cwe",
+"suspicious",
+"unused"
+],
+"transitions":[
+
+],
+"actions":[
+
+],
+"comments":[
+
+],
+"creationDate":"2020-02-20T08:25:50+0000",
+"updateDate":"2020-02-20T08:25:50+0000"
+}
+],
+"components":[
+{
+"id":1703352,
+"key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6",
+"uuid":"AXBhy1jhFlY0BJMJCx9_",
+"enabled":true,
+"qualifier":"BRC",
+"name":"base dev_fft_java_6",
+"longName":"base dev_fft_java_6",
+"path":"KF/Common/Base",
+"projectId":1700197,
+"subProjectId":1700197
+},
+{
+"id":1709245,
+"key":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6:src/main/java/atg/endeca/index/admin/IndexingHistoryDroplet.java",
+"uuid":"AXBhy1k2FlY0BJMJCyql",
+"enabled":true,
+"qualifier":"FIL",
+"name":"IndexingHistoryDroplet.java",
+"longName":"src/main/java/atg/endeca/index/admin/IndexingHistoryDroplet.java",
+"path":"src/main/java/atg/endeca/index/admin/IndexingHistoryDroplet.java",
+"projectId":1700197,
+"subProjectId":1709240
+},
+{
+"id":1703367,
+"key":"KITS:ATGaucafr05:dev_fft:base:dev_fft_java_6:src/main/java/atg/commerce/order/KFParentCommerceItemImpl.java",
+"uuid":"AXBhy1h6FlY0BJMJCxOv",
+"enabled":true,
+"qualifier":"FIL",
+"name":"KFParentCommerceItemImpl.java",
+"longName":"src/main/java/atg/commerce/order/KFParentCommerceItemImpl.java",
+"path":"src/main/java/atg/commerce/order/KFParentCommerceItemImpl.java",
+"projectId":1700197,
+"subProjectId":1703352
+},
+{
+"id":1709244,
+"key":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6:src/main/java/atg/endeca/index/admin/IndexingConfigurationDroplet.java",
+"uuid":"AXBhy1k2FlY0BJMJCyqk",
+"enabled":true,
+"qualifier":"FIL",
+"name":"IndexingConfigurationDroplet.java",
+"longName":"src/main/java/atg/endeca/index/admin/IndexingConfigurationDroplet.java",
+"path":"src/main/java/atg/endeca/index/admin/IndexingConfigurationDroplet.java",
+"projectId":1700197,
+"subProjectId":1709240
+},
+{
+"id":1709240,
+"key":"KITS:ATGaucafr05:dev_fft:publishing:dev_fft_java_6",
+"uuid":"AXBhy1k9FlY0BJMJCyux",
+"enabled":true,
+"qualifier":"BRC",
+"name":"publishing dev_fft_java_6",
+"longName":"publishing dev_fft_java_6",
+"path":"KF/Publishing",
+"projectId":1700197,
+"subProjectId":1700197
+},
+{
+"id":1700197,
+"key":"KITS:ATGaucafr05:dev_fft:dev_fft_java_6",
+"uuid":"AXBhyzyyFlY0BJMJCwdL",
+"enabled":true,
+"qualifier":"TRK",
+"name":"KITS-ATGaucafr05 dev_fft_java_6",
+"longName":"KITS-ATGaucafr05 dev_fft_java_6"
+}
+],
+"rules":[
+{
+"key":"squid:S1168",
+"name":"Empty arrays and collections should be returned instead of null",
+"lang":"java",
+"status":"READY",
+"langName":"Java"
+},
+{
+"key":"squid:S1854",
+"name":"Dead stores should be removed",
+"lang":"java",
+"status":"READY",
+"langName":"Java"
+},
+{
+"key":"squid:S2160",
+"name":"Subclasses that add fields should override \"equals\"",
+"lang":"java",
+"status":"READY",
+"langName":"Java"
+}
+],
+"users":[
+
+],
+"actionPlans":[
+
+],
+"languages":[
+{
+"key":"js",
+"name":"JavaScript"
+},
+{
+"key":"java",
+"name":"Java"
+},
+{
+"key":"cs",
+"name":"C#"
+}
+],
+"facets":[
+{
+"property":"severities",
+"values":[
+{
+"val":"MAJOR",
+"count":2570
+},
+{
+"val":"MINOR",
+"count":953
+},
+{
+"val":"INFO",
+"count":341
+},
+{
+"val":"CRITICAL",
+"count":136
+},
+{
+"val":"BLOCKER",
+"count":0
+}
+]
+},
+{
+"property":"resolutions",
+"values":[
+{
+"val":"",
+"count":2570
+},
+{
+"val":"FALSE-POSITIVE",
+"count":0
+},
+{
+"val":"WONTFIX",
+"count":0
+},
+{
+"val":"FIXED",
+"count":0
+},
+{
+"val":"REMOVED",
+"count":0
+}
+]
+}
+]
+} 
